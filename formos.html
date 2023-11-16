@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Forma 1</p>
+    <form>
+      <input type="text" name="vardas" placeholder="Vartotojo vardas" required/><br />
+      <input type="password" name="password" placeholder="Slaptažodis" required/><br />
+      <input type="submit" value="Prisijungti"/>
+    </form>
+<hr>
+    <p>Forma 2</p>
+    <form>
+        <input type="text" name="vardas" placeholder="Jūsų vardas" required /><br>
+        <input type="email" name="email" placeholder="Jūsų el. pašto adresas" required /><br>
+        <input type="text" name="tema" placeholder="žinutės tema" /> <br>
+        <textarea name="zinute" id="zinute" cols="30" rows="5" placeholder="Žinutė"></textarea><br>
+        <input type="submit" value="Siųsti žinutę">
+    </form>
+<hr>
+
+    <p>Forma 3</p>
+    <form>
+        <input type="text" name="vardas" placeholder="Vardas" required 
+            style="width: 250px"/><br>
+        <input type="email" name="email" placeholder="El. pašto adresas" required
+            style="width: 250px"/><br>
+        <input type="email" name="email" placeholder="El. pašto adresas dar kartą" 
+            style="width: 250px"/> <br>
+        <textarea name="zinute" id="zinute" cols="30" rows="5" 
+                  placeholder="Aprašymas apie save"></textarea><br>
+    <!-- <label for="moteris"> -->
+            <input type="radio" name="moteris" id="moteris">Moteris
+    <!-- </label> -->
+    <!-- <label for="vyras"> -->
+            <input type="radio" name="vyras" id="vyras">Vyras
+    <!-- </label> --><br>
+        <input type="submit" value="Registruotis">
+    </form>
+    <hr>
+
+    <p>Forma 2.1</p>
+    <form>
+        <label for="vardas">Jūsų vardas</label><br>
+        <input type="text" name="vardas" id="vardas" required /><br>
+        <label for="email">Jūsų el. pašto adresas</label><br>
+        <input type="email" name="email" id="email" required /><br>
+        <label for="tema">Žinutės tema</label><br>
+        <input type="text" name="tema" id="tema" /> <br>
+        <label for="zinute">Žinutė</label><br>
+        <textarea name="zinute" id="zinute" cols="30" rows="5"></textarea><br>
+        <input type="submit" value="Siųsti žinutę">
+    </form>
+
+  </body>
+</html>
