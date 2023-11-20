@@ -1,0 +1,37 @@
+
+.div-image {
+  width: 100vw;
+  position: relative;
+}
+
+  img {
+    width: 100%;
+  }
+
+.div-text {
+  position: absolute;
+  left: 5rem;
+  bottom: 20rem;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  width: 290px;
+  background-color: rgb(40, 140, 201);
+}
+
+p {
+  font-size: 2rem;
+  background-color: black;
+  margin-top: 1rem;
+  width: 50vw;
+}
+
+.text-under-image p {
+background-color: white;
+text-align: justify;
+width: 100%
+
+
+}
