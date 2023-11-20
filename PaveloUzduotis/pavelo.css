@@ -1,0 +1,29 @@
+header {
+  background-color: rgb(24, 119, 242);
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+  font-size: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.mainArticle {
+  padding: 4rem 0;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  color: rgb(24, 119, 242);
+}
