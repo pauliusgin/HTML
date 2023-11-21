@@ -97,8 +97,14 @@ body {
   width: 276px;
   height: 345px;
   align-items: center;
-  box-shadow: 2px 5px 10px papayawhip, 2px 5px 20px grey;
+  box-shadow: 2px 3px 4px papayawhip, 2px 5px 5px black;
+  transition: 0.5s;
 }
+
+    .card:hover {
+      transform: translateX(10px) translateY(-10px);
+      box-shadow: 2px 3px 4px papayawhip, 2px 5px 20px grey; 
+    }
 
 .cardPicture {
   height: 50%;
