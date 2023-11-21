@@ -1,0 +1,21 @@
+body {
+  font-family: lato;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+}
+
+.div-ul {
+  display: flex;
+  flex-direction: column;
+}
