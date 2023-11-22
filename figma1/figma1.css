@@ -97,6 +97,7 @@ body {
   width: 276px;
   height: 345px;
   align-items: center;
+  overflow: hidden;
   box-shadow: 2px 3px 4px papayawhip, 2px 5px 5px black;
   transition: 0.5s;
 }
@@ -119,7 +120,6 @@ body {
   align-items: flex-start;
   background: white;
   overflow: hidden;
-  border-radius: 0 0 10px 10px;
 }
 
 img {
@@ -127,7 +127,6 @@ img {
   height: 176px;
   flex-shrink: none;
   object-fit: none;
-  border-radius: 12px 10px 0 0;
 }
 
 .img-two {
