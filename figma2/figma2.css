@@ -1,0 +1,134 @@
+/* - - - - - CSS reset below - - - - - */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+img,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* - - - - - CSS reset above - - - - - */
+
+.wrapper {
+  display: flex;
+  padding-top: 10rem;
+  justify-content: center;
+  height: 80wh;
+}
+
+.greyElement {
+  width: 796px;
+  height: 355px;
+  background: #e2e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.headline {
+  color: #959393;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 110% */
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 185px;
+  top: 0;
+}
+
+.titleDiv {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  color: #121212;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.text {
+  color: #373636;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 110% */
+  letter-spacing: 0.2px;
+}
+
+svg {
+  position: absolute;
+  right: -10px;
+  bottom: -3px;
+}
