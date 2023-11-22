@@ -1,0 +1,161 @@
+/* - - - - - CSS reset below - - - - - */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+img,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* - - - - - CSS reset above - - - - - */
+
+.outsideElement {
+  height: 100vh;
+  background: #131417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insideElement {
+  padding: 65px 72px 66px 72px;
+  margin: 106px 55px 106px 66px;
+  border-radius: 12px;
+  background: rgba(34, 34, 37, 0.7);
+  position: relative;
+  color: white;
+  font-family: "Inter";
+}
+
+button {
+  left: 0;
+  bottom: 0;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 2px solid #f17965;
+  background: rgba(34, 34, 37, 0.7);
+  color: #f17965;
+  width: fit-content;
+}
+
+  button:hover {
+    background: #F79090;
+    color: white;
+  }
+
+.megaphone {
+  position: absolute;
+  left: -70px;
+  top: -110px;
+  transform: rotate(11.788deg)
+}
+
+.star {
+  z-index: 3;
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+}
+
+.redCircle {
+  z-index: 2;
+  position: absolute;
+  right: -15px;
+  bottom: 25px;
+}
+
+.blueCircle {
+  position: absolute;
+  right: -5px;
+  bottom: -50px;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.question {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.42px;
+}
+
+.answer {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
