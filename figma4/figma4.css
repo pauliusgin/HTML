@@ -138,17 +138,15 @@ table {
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: 0.15s;
 }
 
-  .sectionButton:hover a {
+  .sectionButton:hover {
     color: #f17965;
   }
 
-  .sectionButton:active a {
-    color: white;
-  }
-
   .sectionButton:active {
+    color: white;
     background: #f17965;
   }
 
@@ -163,6 +161,7 @@ table {
   border-radius: 200px;
   border: 3px solid #959393;
   cursor: pointer;
+  transition: 0.15s;
 }
   
   .arrowButton:hover svg path {
