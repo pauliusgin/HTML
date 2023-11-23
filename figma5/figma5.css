@@ -78,9 +78,6 @@ table {
 }
 /* - - - - - CSS reset above - - - - - */
 
-body {
-  position: relative;
-}
 
 .picture {
   background-image: url(https://images.squarespace-cdn.com/content/v1/620d32bf3f14fb0fa731b8ef/bede90f2-bc43-45e9-b940-8461bca629c5/warren-wong-VVEwJJRRHgk-unsplash.jpg);
