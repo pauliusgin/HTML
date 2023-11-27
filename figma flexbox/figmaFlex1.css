@@ -1,0 +1,158 @@
+/* - - - - - CSS reset below - - - - - */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+img,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a:link {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* - - - - - CSS reset above - - - - - */
+
+body {
+  font-family: "Montserrat";
+  color: white;
+  width: 100vw;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  padding: 16px 160px;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+main {
+  height: 100vh;
+  background-image: url(https://s3-alpha-sig.figma.com/img/748c/72b4/8998c5cda3810c2ab27914eaa7f3aa6f?Expires=1702252800&Signature=XIUGmvJZHNKkGLT88rMEZhEXA4KyWbo7QY~H2gd2OSw66vDr2yy6ZLdoM851DcnKIUU4BIR7pSKzuI0kh~hMpPPxyGRU2lPk5e9rgt3PWvzthkIXiwJUGC~RKZkWDkVCJ0QMoomuvhWE6LHO7ZQuZjUlZ22FU2AfEDo7jcK3xC0Uq524NX0oxFTgqvStDNSAZPCgCj2P7Lg9jkG9qXnKnrSPsZ2y5s~3gOikXMPiISZbxD12yJgas4wCUzxB5m7Jf3G0ItMZM9GwBp1JQaYOKebI~TQE~HjOsSZmcqx8r5dDrqyoeYRKesnpA3841C1hybqv1oq-qMrZg~VI-MkQ~Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: 300px;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-container {
+  margin-top: 5rem;
+  width: 70vw;
+  height: 60vh;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-text h1 {
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5.12px;
+}
+
+.products-text p {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.products-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid red;
+  width: 100px;
+  height: 140px;
+}
