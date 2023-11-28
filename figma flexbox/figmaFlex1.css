@@ -148,7 +148,6 @@ main {
   background-repeat: repeat;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .products-container {
