@@ -88,10 +88,23 @@ nav {
   width: 100vw;
   display: flex;
   padding: 16px 160px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: black;
   color: white;
+  gap: 20px;
+}
+
+nav a {
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: #9661E8;
+}
+
+nav a:active {
+  color: #e18dd4;
 }
 
 .nav-button {
@@ -104,43 +117,60 @@ nav {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transition: all 0.3s;
 }
+
+.nav-button:hover {
+  border: 2px solid #9661E8; 
+}
+
+.nav-button:active {
+  border: 2px solid #e18dd4;
+}
+
+svg path {
+  transition: all 0.3s;
+}
+
+.nav-button:hover svg path {
+  stroke: #9661E8;
+}
+
+.nav-button:active svg path {
+  stroke: #e18dd4;
+}
+
 
 main {
   height: 100vh;
-  background-image: url(https://s3-alpha-sig.figma.com/img/748c/72b4/8998c5cda3810c2ab27914eaa7f3aa6f?Expires=1702252800&Signature=XIUGmvJZHNKkGLT88rMEZhEXA4KyWbo7QY~H2gd2OSw66vDr2yy6ZLdoM851DcnKIUU4BIR7pSKzuI0kh~hMpPPxyGRU2lPk5e9rgt3PWvzthkIXiwJUGC~RKZkWDkVCJ0QMoomuvhWE6LHO7ZQuZjUlZ22FU2AfEDo7jcK3xC0Uq524NX0oxFTgqvStDNSAZPCgCj2P7Lg9jkG9qXnKnrSPsZ2y5s~3gOikXMPiISZbxD12yJgas4wCUzxB5m7Jf3G0ItMZM9GwBp1JQaYOKebI~TQE~HjOsSZmcqx8r5dDrqyoeYRKesnpA3841C1hybqv1oq-qMrZg~VI-MkQ~Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://s3-alpha-sig.figma.com/img/748c/72b4/8998c5cda3810c2ab27914eaa7f3aa6f?Expires=1702252800&Signature=XIUGmvJZHNKkGLT88rMEZhEXA4KyWbo7QY~H2gd2OSw66vDr2yy6ZLdoM851DcnKIUU4BIR7pSKzuI0kh~hMpPPxyGRU2lPk5e9rgt3PWvzthkIXiwJUGC~RKZkWDkVCJ0QMoomuvhWE6LHO7ZQuZjUlZ22FU2AfEDo7jcK3xC0Uq524NX0oxFTgqvStDNSAZPCgCj2P7Lg9jkG9qXnKnrSPsZ2y5s~3gOikXMPiISZbxD12yJgas4wCUzxB5m7Jf3G0ItMZM9GwBp1JQaYOKebI~TQE~HjOsSZmcqx8r5dDrqyoeYRKesnpA3841C1hybqv1oq-qMrZg~VI-MkQ~Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   background-size: 300px;
   background-repeat: repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .products-container {
   margin-top: 5rem;
-  width: 70vw;
-  height: 60vh;
+  margin-bottom: 5rem;
   background-color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 30px;
+  padding: 30px 50px;
 }
 
 .products-text h1 {
-  text-align: center;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 5.12px;
 }
 
 .products-text p {
-  text-align: center;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.6px;
@@ -152,7 +182,99 @@ main {
 }
 
 .card {
-  border: 1px solid red;
+  border: 2px solid white;
+  width: 200px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-image {
+  height: 100px;
   width: 100px;
-  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.card-image-one img {
+  width: 100px;
+  height: auto;
+}
+
+.card-image-two img,
+.card-image-three img {
+  width: 150px;
+  height: auto;
+}
+
+.card-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-variant: all-small-caps;
+  letter-spacing: 0.96px;
+}
+
+.divider {
+  width: 1rem;
+}
+
+.card-description {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.54px;
+}
+
+.card-button {
+  margin: 1rem;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-variant: all-small-caps;
+  letter-spacing: 1.52px;
+  color: #9661E8;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-button:hover {
+  border: 1px solid #9661E8;
+}
+
+.card-button:active {
+  color: #e18dd4;
+  border: 1px solid #e18dd4;
+}
+
+footer {
+  display: flex;
+  padding: 16px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  background-color: black;
+}
+
+footer p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
