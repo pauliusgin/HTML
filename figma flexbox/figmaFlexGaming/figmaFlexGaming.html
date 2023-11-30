@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Flex Gaming</title>
+    <link rel="stylesheet" href="./figmaFlexGaming.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div class="header-logo">
+          <img src="./assets/soslogo.png" alt="SOS logo" />
+        </div>
+        <div class="nav-bar">
+          <a href="#main" class="nav-bar-link">MAIN</a>
+          <a href="#about" class="nav-bar-link">ABOUT</a>
+          <a href="#features" class="nav-bar-link">GAME FEATURES</a>
+          <a href="#system" class="nav-bar-link">SYSTEM REQUIREMENTS</a>
+          <a href="#quotes" class="nav-bar-link">QUOTES</a>
+        </div>
+        <div class="nav-utils">
+          <div class="nav-utils-lang">
+            <select name="lang" id="lang">
+              <option value="ENG">ENG</option>
+              <option value="RUS">RUS</option>
+              <option value="FRA">FRA</option>
+              <option value="DEU">DEU</option>
+            </select>
+          </div>
+          <div class="nav-utils-separator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2"
+              height="32"
+              viewBox="0 0 2 32"
+              fill="none"
+            >
+              <path
+                opacity="0.5"
+                d="M1 1L1 31"
+                stroke="white"
+                stroke-width="0.873968"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <a
+            href="https://www.xbox.com/en-us/games?xr=shellnav"
+            class="nav-xbox-link"
+            target="_blank"
+          >
+            <div class="nav-xbox-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  d="M9.92733 2.72812C11.5116 3.34999 13.043 4.17134 14.4864 5.17455C14.6507 5.28601 14.8384 5.34468 15.0262 5.34468C15.2139 5.34468 15.4017 5.28601 15.566 5.17455C17.0094 4.17134 18.5408 3.34413 20.1251 2.72225C20.483 2.58145 20.7235 2.22945 20.7177 1.84225C20.7177 1.45504 20.4771 1.1089 20.1133 0.97397C16.9449 -0.228709 13.1075 -0.228709 9.94493 0.97397C9.58701 1.1089 9.34058 1.46091 9.34058 1.84225C9.34058 2.22358 9.56354 2.58732 9.92733 2.72812Z"
+                  fill="#FFB548"
+                />
+                <path
+                  d="M23.5347 2.73346C23.2354 2.52813 22.854 2.51053 22.5313 2.6924C20.7769 3.70147 19.0812 4.85722 17.4794 6.13029C17.2681 6.30043 17.1391 6.5527 17.1273 6.82257C17.1156 7.09244 17.2212 7.35644 17.4148 7.54417C20.7358 10.7063 25.336 20.404 26.3921 24.8627C24.1038 20.9907 18.9991 11.8797 15.6604 8.76445C15.3025 8.43005 14.7392 8.43005 14.3813 8.76445C11.0368 11.8797 5.94967 20.9966 3.66134 24.8745C4.71749 20.4158 9.3059 10.7063 12.6269 7.54417C12.8264 7.35644 12.932 7.09244 12.9203 6.82257C12.9086 6.5527 12.7795 6.30043 12.5682 6.13029C10.9664 4.85722 9.26483 3.70147 7.5163 2.6924C7.20533 2.51053 6.8122 2.52813 6.51296 2.73346C2.43502 5.54362 0 10.1607 0 15.0888C0 18.6909 1.29672 22.164 3.66134 24.8745C6.48949 28.195 10.6261 30.1076 15.0209 30.1076C19.4157 30.1076 23.5581 28.2009 26.3921 24.8686C28.745 22.1699 30.0417 18.6968 30.0417 15.0888C30.0417 10.1607 27.6067 5.54362 23.5347 2.73346Z"
+                  fill="#FFB548"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="https://store.steampowered.com/app/619080/SOS/"
+            class="nav-steam-link"
+            target="_blank"
+          >
+            <div class="nav-steam-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="31"
+                viewBox="50 0 31 31"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M62.1506 30.0038C70.4696 30.0038 77.2135 23.2881 77.2135 15.0038C77.2135 6.71951 70.4696 0.00378418 62.1506 0.00378418C53.8316 0.00378418 47.0876 6.71951 47.0876 15.0038C47.0876 16.5679 47.3281 18.0761 47.7741 19.4938C47.8842 19.5157 48.051 19.5588 48.2847 19.6271L47.8844 13.3479C47.8844 13.2328 48.0791 13.1774 48.2576 13.1267C48.3555 13.0989 48.4485 13.0724 48.5017 13.0383C48.647 12.9467 51.6386 14.0357 51.7984 14.108L55.624 15.833C56.6119 15.2114 57.7935 14.9609 58.9557 15.1295L62.4326 10.9036C62.4762 7.53051 65.2365 4.8128 68.6311 4.80798C71.803 4.84171 74.4325 7.25103 74.7327 10.388C75.0523 13.7803 72.5536 16.7871 69.1444 17.11L63.3527 21.2299C62.9992 23.0369 61.7014 24.5162 59.9484 25.1041C57.2608 26.01 54.3408 24.574 53.4352 21.8949L51.4207 21.2299C51.2737 21.1833 48.615 20.081 47.8236 19.6483C49.7873 25.6592 55.4594 30.0038 62.1506 30.0038ZM71.7306 10.9757C71.7306 12.6789 70.343 14.0597 68.6313 14.0597C66.9196 14.0597 65.532 12.6789 65.532 10.9757C65.532 9.27254 66.9196 7.89182 68.6313 7.89182C70.343 7.89182 71.7306 9.27254 71.7306 10.9757ZM70.6996 10.9758C70.6996 12.1121 69.7738 13.0333 68.6318 13.0333C67.4898 13.0333 66.564 12.1121 66.564 10.9758C66.564 9.83941 67.4898 8.91821 68.6318 8.91821C69.7738 8.91821 70.6996 9.83941 70.6996 10.9758ZM56.9565 23.0032C57.3729 23.2055 57.8329 23.3116 58.2978 23.3116C58.6513 23.3116 58.9951 23.2537 59.3341 23.1429C60.1137 22.8731 60.7481 22.3093 61.1064 21.572C61.8522 20.0349 61.2033 18.1942 59.6634 17.4521C59.4019 17.3268 59.0968 17.4328 58.9709 17.6882C58.845 17.9484 58.9515 18.252 59.2082 18.3773C59.2421 18.3917 59.276 18.4062 59.3099 18.4255C60.3268 18.9459 60.719 20.1843 60.196 21.1962C59.6731 22.2081 58.4237 22.5984 57.4116 22.078C57.1502 21.9527 56.8451 22.0587 56.7192 22.3141C56.5933 22.5743 56.6998 22.8779 56.9565 23.0032Z"
+                  fill="#FFB548"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </header>
+      <main>
+        <div class="page main-page" id="main">
+          <div class="main-text">
+            <h1 class="main-title">SURVIVE AT ALL COSTS</h1>
+            <h3 class="main-subtitle">
+              Experience new social battle royale game
+            </h3>
+          </div>
+          <a
+            href="https://store.steampowered.com/app/619080/SOS/"
+            class="main-steam-link"
+            target="_blank"
+          >
+            <div class="main-steam-link-content">
+              <p>Buy now on Steam</p>
+              <div class="main-steam-content-separator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="3"
+                  height="26"
+                  viewBox="0 0 3 26"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.5"
+                    d="M1.17017 1L2.17016 24.9289"
+                    stroke="#1A1917"
+                    stroke-width="0.873968"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <p>$14.99</p>
+            </div>
+          </a>
+          <a href="#newsletter" class="main-story-link">
+            <div class="story-link-content">
+              <p>THE STORY</p>
+              <div class="story-link-symbol">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="11"
+                  viewBox="0 0 23 11"
+                  fill="none"
+                >
+                  <path
+                    d="M21.2544 1.61609H1L11.0138 9.78521L21.2544 1.61609Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="page about-page" id="about">
+          <div class="about-text">
+            <h3 class="about-subtitle">WHAT IS SOS?</h3>
+            <h1 class="about-title">SOCIAL BATTLE ROYAL GAME</h1>
+            <div class="about-separator"></div>
+            <div class="text-content">
+              <p>
+                Each round, you and 15 other contestants compete to escape a
+                deadly island filled with monsters. The trick is: three people
+                can survive. Will you run solo or form friendships with others
+                to escape? <br />
+                <br />
+                Making the right decisions could be the difference between life
+                and death.
+              </p>
+            </div>
+          </div>
+          <div class="about-pictures">
+            <div class="about-picture one"></div>
+            <div class="about-picture two"></div>
+            <div class="about-picture three"></div>
+            <button class="about-picture-switch">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="44"
+                viewBox="0 0 21 44"
+                fill="none"
+              >
+                <path
+                  d="M2.42773 2.24009L2.42773 41.6713L18.3313 22.1764L2.42773 2.24009Z"
+                  stroke="white"
+                  stroke-width="3.89359"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page feature-page" id="features">
+          <div class="feature-content">
+            <div class="content-titles">
+              <h3>WHAT'S SO SPECIAL</h3>
+              <h1>FEATURES</h1>
+            </div>
+            <div class="content-text">
+              <div class="feature-1">
+                svg
+                <p>SURVIVE AT ALL COSTS</p>
+                <p>
+                  You have 30 minutes to find a relic, signal for extraction,
+                  and grab one of three spots on the rescue chopper.
+                </p>
+              </div>
+              <div class="feature-2">
+                svg
+                <p>CREATE ALLIES AND ENEMIES</p>
+              </div>
+              <div class="feature-3">
+                svg
+                <p>IMPRESS THE AUDIENCE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page system-page" id="system">
+          <h3>CAN MY COMPUTER RUN THIS GAME?</h3>
+          <h1>SYSTEM REQUIREMENTS</h1>
+        </div>
+        <div class="page quotes-page" id="quotes">Quotes page</div>
+        <div class="page newsletter-page" id="newsletter">Newsletter page</div>
+        <footer>Footer</footer>
+      </main>
+    </div>
+  </body>
+</html>
