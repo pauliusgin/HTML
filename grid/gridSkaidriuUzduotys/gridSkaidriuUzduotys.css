@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background: rgb(222, 220, 210);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.uzduotys {
+  height: 300px;
+  width: 500px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* pirma */
+
+.pirma-uzduotis {
+  width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a b d"
+    "e c c"
+    "f c c";
+  padding: 1rem;
+}
+
+.pirma-uzduotis div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.a {
+  grid-area: a;
+  background: #00e492;
+}
+
+.b {
+  grid-area: b;
+  background: #e59900;
+}
+
+.c {
+  grid-area: c;
+  background: #80e200;
+}
+
+.d {
+  grid-area: d;
+  background: #ac00e7;
+}
+
+.e {
+  grid-area: e;
+  background: #ef009d;
+}
+
+.f {
+  grid-area: f;
+  background: #009be4;
+}
+
+/* antra */
+
+.antra-uzduotis {
+  grid-template-rows: 30px 1fr 30px;
+  grid-template-columns: 1fr 3fr;
+  padding: 1rem;
+}
+
+.antra-uzduotis div {
+  background: #cfc2eb;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.antra-uzduotis .logo {
+  grid-area: 1 / 1 / 2 / 3;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dashes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo .dash {
+  background-color: #b9a4e6;
+  height: 3px;
+  width: 1.5rem;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.main {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.footer {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+/* ketvirta */
+
+.ketvirta-uzduotis {
+  grid-template-rows: 1fr 3fr 2fr 1fr;
+  grid-template-columns: 2fr repeat(6, 1fr) 2fr;
+  grid-gap: 3px;
+  border: 2px solid gray;
+  color: white;
+}
+
+.ketvirta-uzduotis div {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #2ca8ff;
+  grid-area: 1 / 1 / 2 / 9;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+}
+
+.main-content {
+  background: #4cc41d;
+  grid-area: 2 / 2 / 3 / 6;
+  justify-content: center;
+}
+
+.sidebar4 {
+  background: #4cc41d;
+  grid-area: 2 / 6 / 3 / 8;
+  justify-content: center;
+}
+
+.twin-left {
+  background: #ff8c00;
+  grid-area: 3 / 2 / 4 / 5;
+  justify-content: center;
+}
+
+.twin-right {
+  background: #ff8c00;
+  grid-area: 3 / 5 / 4 / 8;
+  justify-content: center;
+}
+
+.footer4 {
+  background: #0064c7;
+  grid-area: 4 / 1 / 5 / 9;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+}
