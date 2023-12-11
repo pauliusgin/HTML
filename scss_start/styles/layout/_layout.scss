@@ -1,0 +1,21 @@
+@use "../utilities" as utils;
+
+.first-page {
+  @include utils.page("../assets/lake1.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-page {
+  @include utils.page("../assets/underwater1.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.separator {
+  background: black;
+  height: 10px;
+}

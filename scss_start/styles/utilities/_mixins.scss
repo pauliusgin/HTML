@@ -1,0 +1,31 @@
+@mixin page($image-url) {
+  height: 120vh;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+    image: url($image-url);
+  }
+}
+
+@mixin flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@mixin grid-container {
+  display: grid;
+}
+
+@mixin card-base($bg-color, $text-color) {
+  height: 300px;
+  width: 150px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 5px 10px black;
+  background: $bg-color;
+  color: $text-color;
+}
