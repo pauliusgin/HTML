@@ -15,10 +15,6 @@
   gap: 2rem;
 }
 
-@mixin grid-container {
-  display: grid;
-}
-
 @mixin card-base($bg-color, $text-color) {
   height: 300px;
   width: 150px;
