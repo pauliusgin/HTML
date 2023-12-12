@@ -1,3 +1,19 @@
-body {
-  background-color: burlywood;
+.navbar .bg-body-tertiary {
+  background-color: white;
 }
+
+.hero {
+  height: 800px;
+  background: url(../assets/images/hero-desk.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+

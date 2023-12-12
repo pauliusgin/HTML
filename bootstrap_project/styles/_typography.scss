@@ -1,0 +1,31 @@
+@use "./mixins" as mix;
+
+.navbar-brand {
+  @include mix.Roboto-Condensed(#878b9b, 26px, 700);
+
+  &:hover {
+    color: #43c45f;
+  }
+
+  &:focus {
+    color: #43c45f;
+  }
+}
+
+.nav-link {
+  @include mix.Roboto(#404445, 16px, 400);
+
+  &:active {
+    color: #43c45f;
+    font-weight: 900;
+  }
+
+  @media (width < 992px) {
+    font-size: 24px;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  color: #43c45f;
+  font-weight: 900;
+}

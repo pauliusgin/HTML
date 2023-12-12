@@ -1,3 +1,56 @@
-body {
-  background-color: burlywood;
+.navbar-brand {
+  color: #878b9b;
+  font-family: Roboto Condensed;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.navbar-brand:hover {
+  color: #43c45f;
+}
+.navbar-brand:focus {
+  color: #43c45f;
+}
+
+.nav-link {
+  color: #404445;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-link:active {
+  color: #43c45f;
+  font-weight: 900;
+}
+@media (width < 992px) {
+  .nav-link {
+    font-size: 24px;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  color: #43c45f;
+  font-weight: 900;
+}
+
+.navbar .bg-body-tertiary {
+  background-color: white;
+}
+
+.hero {
+  height: 800px;
+  background: url(../assets/images/hero-desk.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-nav {
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
