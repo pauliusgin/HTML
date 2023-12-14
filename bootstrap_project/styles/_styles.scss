@@ -107,3 +107,30 @@
     max-width: 672px;
   }
 }
+
+.projects {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  &-section {
+    background-color: #f1f8ff;
+  }
+  &__text {
+    max-width: 648px;
+  }
+
+  .project {
+    &__image {
+      width: 100%;
+      max-width: 424px;
+      min-width: 345px;
+      height: 262px;
+      &_camera {
+        object-fit: cover;
+      }
+    }
+    &__description {
+      max-width: 424px;
+    }
+  }
+}
