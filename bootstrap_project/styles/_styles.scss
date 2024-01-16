@@ -56,7 +56,6 @@
   }
   &__image {
     grid-area: 1 / 3 / 3 / 5;
-
     @media (width < 1400px) {
       grid-area: 3 / 1 / 4 / 3;
     }
@@ -72,8 +71,66 @@
 
 // Bootstrap grid
 .services-boot {
-  border: 1px solid red;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   & .row {
     height: 50%;
+  }
+}
+
+.services-boot__image img {
+  @media (width < 768px) {
+    width: 342px;
+    height: auto;
+  }
+}
+
+.video {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  &-section {
+    background-color: #f1f8ff;
+  }
+  &__video {
+    width: 100%;
+    max-width: 872px;
+    min-width: 340px;
+  }
+}
+
+.statistics {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  &__text {
+    max-width: 672px;
+  }
+}
+
+.projects {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  &-section {
+    background-color: #f1f8ff;
+  }
+  &__text {
+    max-width: 648px;
+  }
+
+  .project {
+    &__image {
+      width: 100%;
+      max-width: 424px;
+      min-width: 345px;
+      height: 262px;
+      &_camera {
+        object-fit: cover;
+      }
+    }
+    &__description {
+      max-width: 424px;
+    }
   }
 }

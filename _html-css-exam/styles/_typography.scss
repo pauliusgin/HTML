@@ -1,0 +1,199 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.header {
+  .navbar {
+    .nav-link {
+      @include Ubuntu(white, 20px, 700);
+      letter-spacing: -0.5px;
+    }
+    .dropdown-item {
+      @include Ubuntu(white, 16px, 500);
+    }
+
+    .shopping-cart__items {
+      @include Ubuntu(white, 10px, 400);
+      letter-spacing: -0.25px;
+    }
+
+    .nav__profile {
+      &_name {
+        @include Ubuntu(white, 16px, 500);
+        letter-spacing: -0.4px;
+      }
+      &_link {
+        @include link-reset;
+        @include Ubuntu($gray, 16px, 500);
+        letter-spacing: -0.4px;
+      }
+    }
+  }
+}
+
+.welcome {
+  &__subtitle {
+    @include Ubuntu($gray, 24px, 700);
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+    letter-spacing: -0.6px;
+  }
+  &__title {
+    @include Ubuntu(white, 40px, 700);
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    letter-spacing: -1px;
+  }
+  &__description {
+    @include Ubuntu($gray, 20px, 500);
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
+    line-height: 150%;
+    letter-spacing: -0.5px;
+  }
+  &__search {
+    &_input {
+      @include Ubuntu($gray, 16px, 400);
+      font-size: clamp(1rem, 2vw + 1rem, 1.25rem);
+      line-height: 187%;
+    }
+    &_button {
+      @include Ubuntu(black, 10px, 700);
+      line-height: 20px;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+    }
+  }
+  &__scroll-text {
+    @include Ubuntu(white, 20px, 400);
+    line-height: 30px;
+  }
+}
+
+.collections {
+  &__title {
+    @include Ubuntu(white, 27px, 700);
+    font-size: clamp(1.688rem, 2vw + 1rem, 2.25rem);
+  }
+  &__subtitle {
+    @include Ubuntu($gray, 15px, 700);
+    letter-spacing: -0.373px;
+    @media (width >= 1200px) {
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+  }
+}
+
+.shopping {
+  &__titles_title {
+    @include Ubuntu(white, 32px, 700);
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  }
+  &__titles_subtitle {
+    @include Ubuntu($gray, 24px, 700);
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  }
+  &__description_content-1,
+  &__description_content-2 {
+    @include Ubuntu($gray, 18px, 700);
+    line-height: 133%;
+  }
+  &__button_more {
+    @include Ubuntu(white, 10px, 700);
+    line-height: 20px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+  }
+  &__button_cart {
+    @include Ubuntu(black, 10px, 700);
+    line-height: 200%;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+  }
+  &__item_newtag {
+    @include Ubuntu(white, 16px, 400);
+    line-height: 125%;
+    letter-spacing: 0.2px;
+  }
+  .item__caption {
+    &_symbols_stars {
+      @include Ubuntu(white, 11px, 700);
+      font-size: clamp(0.688rem, 1vw + 0.25rem, 1rem);
+      line-height: 181.818%;
+      letter-spacing: 0.2px;
+    }
+    &_title {
+      @include Ubuntu(white, 24px, 700);
+      font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+      letter-spacing: 0.2px;
+    }
+    &_price-current {
+      @include Ubuntu(white, 16px, 700);
+      font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
+      line-height: 125%;
+      letter-spacing: 0.2px;
+    }
+    &_price-previous {
+      @include Ubuntu($gray, 14px, 500);
+      line-height: 114%;
+      letter-spacing: 0.2px;
+      text-decoration: line-through;
+      @media (width >= 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.first-offer {
+  &__title {
+    @include Ubuntu(white, 67px, 700);
+    font-size: clamp(4.188rem, 5vw + 3rem, 8rem);
+    line-height: 107%;
+    @media (width >= 1920px) {
+      font-size: 170px;
+    }
+  }
+  &__subtitle {
+    @include Ubuntu(white, 14px, 700);
+    font-size: clamp(0.875rem, 3vw, 2.25rem);
+    line-height: 111%;
+  }
+}
+
+.step-up {
+  &__titles {
+    &_title {
+      @include Ubuntu(white, 32px, 700);
+      font-size: clamp(2rem, 3vw + 1rem, 4rem);
+      line-height: 64px;
+    }
+    &_subtitle {
+      @include Ubuntu($gray, 24px, 700);
+      font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    }
+  }
+  &__description_content {
+    @include Ubuntu($gray, 18px, 700);
+    line-height: 24px;
+  }
+  &__button {
+    @include Ubuntu(black, 10px, 700);
+    line-height: 200%;
+    letter-spacing: 2.1px;
+  }
+}
+
+.footer {
+  &__links {
+    &_container li {
+      list-style: none;
+    }
+    &_link a {
+      text-decoration: none;
+      @include Ubuntu($gray, 20px, 700);
+      line-height: 24px;
+    }
+    &_title {
+      @include Ubuntu(white, 30px, 700);
+      line-height: 32px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin Ubuntu($color, $size, $weight) {
+  color: $color;
+  font-family: "Ubuntu";
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: 100%;
+}
+
+@mixin link-reset {
+  &:link {
+    text-decoration: none;
+  }
+}

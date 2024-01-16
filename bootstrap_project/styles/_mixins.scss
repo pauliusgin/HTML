@@ -1,6 +1,6 @@
 @mixin Roboto($color, $size, $weight) {
   color: $color;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto";
   font-size: $size;
   font-style: normal;
   font-weight: $weight;
@@ -9,7 +9,7 @@
 
 @mixin Roboto-Condensed($color, $size, $weight) {
   color: $color;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto";
   font-size: $size;
   font-style: normal;
   font-weight: $weight;

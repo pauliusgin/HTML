@@ -76,8 +76,8 @@
           </div>
         </div>
       </section>
-      <hr>
-      <p>CSS Grid</p>
+      <hr />
+      <p class="text-center">CSS Grid</p>
       <section title="services">
         <div class="container services">
           <div
@@ -140,14 +140,16 @@
           </div>
         </div>
         <hr />
-        <p>Bootstrap grid</p>
+        <p class="text-center">Bootstrap grid</p>
         <div class="container services-boot">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-xxl-6">
               <div class="row">
-                <div class="col-6">
+                <div
+                  class="col-12 col-md-6 mb-5 mb-md-3 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+                >
                   <img
-                    class="services-boot__icon"
+                    class="services-boot__icon mb-3"
                     src="./assets/svg/simple-line-icons_bubbles.svg"
                     alt="bubble icon"
                   />
@@ -158,9 +160,11 @@
                     Mes siūlome reklamą įvairiuose socialiniuose tinkluose.
                   </p>
                 </div>
-                <div class="col-6">
+                <div
+                  class="col-12 col-md-6 mb-5 mb-md-3 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+                >
                   <img
-                    class="services-boot__icon"
+                    class="services-boot__icon mb-3"
                     src="./assets/svg/simple-line-icons_direction.svg"
                     alt="direction icon"
                   />
@@ -172,9 +176,11 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6">
+                <div
+                  class="col-12 col-md-6 mb-5 mb-md-3 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+                >
                   <img
-                    class="services-boot__icon"
+                    class="services-boot__icon mb-3"
                     src="./assets/svg/simple-line-icons_earphones.svg"
                     alt="earphones icon"
                   />
@@ -183,9 +189,11 @@
                     Mūsų sukurtas reklamas galėsite išgirsti per radiją.
                   </p>
                 </div>
-                <div class="col-6">
+                <div
+                  class="col-12 col-md-6 mb-5 mb-md-3 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+                >
                   <img
-                    class="services-boot__icon"
+                    class="services-boot__icon mb-3"
                     src="./assets/svg/simple-line-icons_call-end.svg"
                     alt="phone icon"
                   />
@@ -197,11 +205,145 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 services-boot__image">
+            <div class="col-12 col-xxl-6 services-boot__image text-center">
               <img src="./assets/images/services.png" alt="people thinking" />
             </div>
           </div>
         </div>
+      </section>
+      <section title="about-video" class="video-section">
+        <div
+          class="container video d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            class="video__text d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="video__title text-center mb-4">
+              Vaizdai iš mūsų įmonės
+            </h1>
+            <h2 class="video__subtitle mb-5">
+              Nulla volutpat in ut risus imperdiet aenean justo, tristique neque
+              scelerisque feugiat adipiscing non nulla feugiat lacus sem sed
+              maecenas
+            </h2>
+          </div>
+          <div
+            class="video__video container d-flex flex-column justify-content-center align-items-center ratio ratio-16x9"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/y6VJBeZEDZU?si=9mpvrDsvJMPjtUDV"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section title="statistics">
+        <div class="container statistics">
+          <div class="statistics__text text-start pb-5">
+            <h1 class="statistics__title mb-4">Mūsų statistika</h1>
+            <h2 class="statistics__subtitle">
+              Non sapien egestas mi, faucibus dis vel velit eu, quisque ultrices
+              aliquet diam faucibus ridiculus.
+            </h2>
+          </div>
+          <hr />
+          <div class="statistics_stats pt-5">
+            <div class="row row-cols-2 row-cols-md-4">
+              <div class="col">
+                <img
+                  src="./assets/svg/simple-line-icons_basket.svg"
+                  alt="icon basket"
+                  class="statistics__icon mb-3"
+                />
+                <p class="statistics__number">145</p>
+                <p class="statistics__text">Įgyvendinti projektai</p>
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/svg/simple-line-icons_cup.svg"
+                  alt="icon cup"
+                  class="statistics__icon mb-3"
+                />
+                <p class="statistics__number">345</p>
+                <p class="statistics__text">Kavos puodeliai</p>
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/svg/simple-line-icons_diamond.svg"
+                  alt="icon diamond"
+                  class="statistics__icon mb-3"
+                />
+                <p class="statistics__number">87</p>
+                <p class="statistics__text">Patenkinti klientai</p>
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/svg/simple-line-icons_briefcase.svg"
+                  alt="icon briefcase"
+                  class="statistics__icon mb-3"
+                />
+                <p class="statistics__number">45</p>
+                <p class="statistics__text">Įmonės partnerės</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section title="projects-gallery" class="projects-section">
+        <div class="container projects">
+          <div class="projects__text container text-center pb-5">
+            <h1 class="projects__title mb-4">Darbų galerija</h1>
+            <h2 class="projects__subtitle">
+              Amet rutrum molestie nibh sed nulla facilisis commodo, dui in
+              viverra lectus quis faucibus volutpat leo ut sed dignissim egestas
+            </h2>
+          </div>
+          <div class=" row row-cols-auto">
+            <div class="col projects__project project">
+              <img
+                src="./assets/images/works-camera-man.jpeg"
+                alt="camera man"
+                class="project__image project__image_camera"
+              />
+              <h1 class="project__title">Pirmas projektas</h1>
+              <p class="project__description">
+                In proin odio pellentesque vitae, fringilla parturient nulla
+                dignissim turpis mauris maecenas mattis phasellus eu, bibendum
+                viverra curabitur elementum viverra.
+              </p>
+            </div>
+            <div class="col projects__project project">
+              <img
+                src="./assets/images/works-ice-coffee.jpeg"
+                alt="ice coffee"
+                class="project__image project__image_cofee"
+              />
+              <h1 class="project__title">Antras projektas</h1>
+              <p class="project__description">
+                Euismod maecenas magna purus nibh mi, sagittis ultrices orci
+                ultrices vel tempus viverra non tempus tincidunt sed donec
+                cursus cras.
+              </p>
+            </div>
+            <div class="col projects__project project">
+              <img
+                src="./assets/images/works-concert.jpeg"
+                alt="concert"
+                class="project__image project__image_concert"
+              />
+              <h1 class="project__title">Trečias projektas</h1>
+              <p class="project__description">
+                Nisl eget sem vestibulum, sollicitudin at tortor, nunc porttitor
+                vestibulum, id urna, at sit a nulla eget sed aliquet amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+
       </section>
     </main>
     <footer></footer>
